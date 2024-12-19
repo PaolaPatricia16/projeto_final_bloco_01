@@ -1,11 +1,13 @@
 package biblioteca.repository;
 
-import biblioteca.model.*;
+import biblioteca.controller.BibliotecaController;
+import biblioteca.model.Biblioteca;
 
-public class BibliotecaRepository {
-
-	public void cadastrar(Biblioteca Biblioteca);
-	public void atualizar(BiBlioteca Bibliteca);
+public interface BibliotecaRepository {
+	
+	public void cadastrar(Biblioteca biblioteca);
+	public void localizar(int numero);
+	public void atualizar(Biblioteca biblioteca);
 	public void listar();
 	public void excluir(int numero);
 }

@@ -78,14 +78,14 @@ public abstract class Biblioteca {
 				break;
 		}
 		System.out.println("\n\n******************************************");
-        System.out.println("Dados de Cadastro                  : ");
-        System.out.println("*******************************************");
+        System.out.println("           Dados de Cadastro              ");
+        System.out.println("******************************************");
         System.out.println("Código do Produto: " +this.numero);
         System.out.println("Título: " +this.titulo);
         System.out.println("Autor: " +this.autor);
         System.out.println("Ano: " +this.ano);
         System.out.println("Editora: " +this.editora);
-        System.out.println("Tipo: " +tipo);
+        System.out.println("Categoria: " +tipo);
        
 	}
 }
