@@ -3,7 +3,9 @@ package biblioteca;
 import java.io.IOException;
 import java.util.Scanner;
 
+import biblioteca.model.*;
 import biblioteca.util.Cores;
+
 
 public class Menu {
 
@@ -11,7 +13,13 @@ public class Menu {
 
 		Scanner leia = new Scanner(System.in);
 		String titulo, autor, editora, reimpressao;
-		int op, ano, qtdeExemplares, tipo, qtdeVol;
+		int op, numero, ano, qtdeExemplares, tipo, qtdeVol;
+		
+		BibliotecaLivro livro = new BibliotecaLivro(1, "Dom Casmurro", "Machado de Assís", 1899, "Antofágica", 1, 50);
+		livro.visualizar();
+		
+		BibliotecaManga manga = new BibliotecaManga(2, "Naruto", "Masashi Kishimoto", 1999, "Panini", 2, 72, "Sim");
+		manga.visualizar();
 		
 		do {
 			System.out.println(Cores.ANSI_PINK_BACKGROUND
@@ -39,7 +47,6 @@ public class Menu {
 				break;
 			case 2:
 				System.out.println("Atualizar Cadastro");
-
 
 				
 				keypress();
