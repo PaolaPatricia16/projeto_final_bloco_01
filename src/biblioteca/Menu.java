@@ -74,7 +74,7 @@ public class Menu {
 							tipo, qtdeExemplares));
 					break;
 				case 2:
-					System.out.println("Digite a quantida de Volumes: ");
+					System.out.println("Digite a quantidade de Volumes: ");
 					qtdeVol = leia.nextInt();
 					System.out.println("É uma reimpressão? ");
 					reimpressao = leia.next();
